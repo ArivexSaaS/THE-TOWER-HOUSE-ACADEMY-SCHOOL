@@ -1,0 +1,29 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://YOUR-DOMAIN.com/</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-DOMAIN.com/admission.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-DOMAIN.com/programs.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-DOMAIN.com/results.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-DOMAIN.com/gallery.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-DOMAIN.com/contact.html</loc>
+    </url>
+
+</urlset>

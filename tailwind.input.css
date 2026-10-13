@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@source "./*.html";
+@source "./script.js";
+
+:root {
+    --navy: #071a35;
+    --gold: #d5ad53;
+    --light: #f5f7fb;
+    --white: #ffffff;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply antialiased;
+    }
+}
+
+@layer components {
+    .tw-container {
+        @apply mx-auto w-[90%] max-w-6xl;
+    }
+
+    .tw-gold-button {
+        @apply inline-flex items-center justify-center gap-2
+               rounded-lg bg-amber-400 px-5 py-3
+               font-bold text-slate-900 transition
+               hover:-translate-y-1 hover:bg-amber-300;
+    }
+
+    .tw-blue-card {
+        @apply rounded-2xl border border-slate-200
+               bg-white p-6 shadow-sm transition
+               hover:-translate-y-1 hover:shadow-lg;
+    }
+}
+
+.bg-light { background-color: var(--light); }
+.bg-navy { background-color: var(--navy); }
+.bg-white { background-color: var(--white); }
+.text-navy { color: var(--navy); }
+.text-gold { color: var(--gold); }
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+}
+.btn-outline {
+    border-color: var(--gold);
+    color: var(--white);
+    background: transparent;
+}
+.btn-outline:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+@media (min-width: 640px) {
+    .sm-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sm-flex { display: flex; }
+}
+
+@media (min-width: 768px) {
+    .md-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .md-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .md-flex { display: flex; }
+}
+
+@media (min-width: 1024px) {
+    .lg-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .lg-grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

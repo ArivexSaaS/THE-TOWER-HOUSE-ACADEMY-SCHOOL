@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact The Tower House Academy & School for admissions and academic enquiries.">
+
+    <meta name="theme-color" content="#061a3b">
+
+    <title>Contact Us | The Tower House Academy & School</title>
+
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="page-header">
+        <a href="./index.html" class="page-brand">
+            <img src="./logo.png"
+                 alt="Tower House Academy logo"
+                 width="75">
+            <span>THE TOWER HOUSE ACADEMY &amp; SCHOOL</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="results.html">Our Toppers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+            <a href="admission.html" class="contact-nav-btn">Apply Now</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+
+        <!-- Contact Hero -->
+        <section class="page-hero">
+            <p class="page-eyebrow">
+                <i class="fa-solid fa-envelope"></i>
+                WE ARE HERE TO HELP
+            </p>
+
+            <h1>Contact <span>Us</span></h1>
+
+            <p>
+                Get in touch with The Tower House Academy &amp; School
+                for admission information and academic guidance.
+            </p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="info-grid" aria-label="Contact information">
+
+            <article class="info-card">
+                <div class="contact-card-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h2>Phone</h2>
+                <p>
+                    Contact the academy for its verified phone number
+                    and further information.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <div class="contact-card-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h2>Our Address</h2>
+                <p>
+                    Please confirm the official campus address
+                    directly with the academy.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <div class="contact-card-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2>Admissions</h2>
+                <p>
+                    Ask about available programmes, admission dates
+                    and entry requirements.
+                </p>
+                <a href="./admission.html" class="contact-text-link">
+                    Admission Enquiry
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+
+            <div class="contact-section-heading">
+                <p class="contact-section-tag">GET IN TOUCH</p>
+                <h2>Send an <span>Enquiry</span></h2>
+                <p>
+                    Submit your details and the academy team will follow up.
+                </p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <input type="hidden" name="enquiryType" value="contact">
+
+                <div class="form-field">
+                    <label for="contact-name">Student / Parent Name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        maxlength="100"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="contact-phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel"
+                        maxlength="30"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-program">Enquiry Type</label>
+                    <select id="contact-program" name="program" required>
+                        <option value="">Select enquiry type</option>
+                        <option value="Admissions">Admissions</option>
+                        <option value="O Level">O Level</option>
+                        <option value="A Level">A Level</option>
+                        <option value="PhD Guidance">PhD Guidance</option>
+                        <option value="General Enquiry">General Enquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-message">Your Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        maxlength="1000"
+                        placeholder="Write your question here..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Enquiry
+                </button>
+
+                <p class="contact-form-note" id="contact-status" role="status" aria-live="polite">
+                    Your enquiry is securely saved for the academy team. This form does not send email.
+                </p>
+
+            </form>
+        </section>
+
+        <!-- Admissions Call to Action -->
+        <section class="contact-cta">
+            <div>
+                <p>READY TO JOIN US?</p>
+                <h2>Your Future Starts Here</h2>
+                <span>
+                    Visit our admissions page to learn about the next steps.
+                </span>
+            </div>
+
+            <a href="./admission.html">
+                Apply for Admission
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="./index.html" class="footer-home-link">
+                <img src="./logo.png"
+                     alt="Tower House Academy logo"
+                     width="48">
+                <span>THE TOWER HOUSE ACADEMY &amp; SCHOOL</span>
+            </a>
+
+            <div class="footer-navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./programs.html">Programs</a>
+                <a href="./results.html">Results</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./admission.html">Admissions</a>
+            </div>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                The Tower House Academy &amp; School.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

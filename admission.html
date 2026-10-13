@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about admissions at The Tower House Academy & School. Explore O Level and A Level programmes and contact the academy for admission information.">
+    <title>Admissions | The Tower House Academy & School</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="./index.html">
+            <img src="./logo.png" alt="Tower House Academy logo" width="75">
+            <span>THE TOWER HOUSE ACADEMY & SCHOOL</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./programs.html">Programs</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./results.html">Results</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./admission.html" class="active" aria-current="page">Admissions</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-hero">
+            <p>YOUR FUTURE STARTS HERE</p>
+            <h1>Admissions 2026</h1>
+            <p>Explore our academic programmes and enquire about admission.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Admission Information</h2>
+            <p>Admissions are subject to the academy's eligibility criteria,
+               available seats and assessment requirements. Please contact
+               the academy to confirm the latest details.</p>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>O Level</h3>
+                    <p>Ask us about subject options, eligibility and entry requirements.</p>
+                </article>
+                <article class="info-card">
+                    <h3>A Level</h3>
+                    <p>Contact the academy for programme options and admission guidance.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Admission Enquiry</h2>
+            <form id="admission-form" class="enquiry-form">
+                <input type="hidden" name="enquiryType" value="admission">
+                <label for="student-name">Student name</label>
+                <input id="student-name" name="name" required maxlength="100">
+
+                <label for="guardian-name">Parent/guardian name</label>
+                <input id="guardian-name" name="guardian" required maxlength="100">
+
+                <label for="phone">Contact number</label>
+                <input id="phone" name="phone" type="tel" required maxlength="30">
+
+                <label for="class-level">Programme</label>
+                <select id="class-level" name="program" required>
+                    <option value="">Choose a programme</option>
+                    <option>O Level</option>
+                    <option>A Level</option>
+                    <option>Other / Need guidance</option>
+                </select>
+
+                <label for="admission-message">Message (optional)</label>
+                <textarea id="admission-message" name="message" rows="4" maxlength="1000"></textarea>
+
+                <button type="submit" class="tw-gold-button">Submit Admission Enquiry</button>
+                <p id="admission-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> The Tower House Academy & School.</p>
+        <nav aria-label="Footer navigation">
+            <a href="./about.html">About</a>
+            <a href="./programs.html">Programs</a>
+            <a href="./results.html">Results</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <a href="./contact.html">Contact the academy</a>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

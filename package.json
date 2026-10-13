@@ -1,0 +1,23 @@
+{
+  "name": "tower-house-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Tower House Academy and School website",
+  "main": "node.js",
+  "scripts": {
+    "build:css": "powershell -NoProfile -Command \"& (Get-Command node).Source './node_modules/@tailwindcss/cli/dist/index.mjs' -i './tailwind.input.css' -o './tailwind.css' --minify; exit $LASTEXITCODE\"",
+    "start": "powershell -NoProfile -Command \"& (Get-Command node).Source './node.js'\"",
+    "dev": "npm run build:css && powershell -NoProfile -Command \"& (Get-Command node).Source '--watch' './node.js'\""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.0",
+    "tailwindcss": "4.3.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

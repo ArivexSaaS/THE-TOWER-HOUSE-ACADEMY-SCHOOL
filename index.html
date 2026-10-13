@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THE TOWER HOUSE ACADEMY & SCHOOL</title>
+
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <p>
+            <i class="fa-solid fa-bullhorn"></i>
+            Admissions Open for 2026
+            <span>•</span>
+            <a href="admission.html">Apply for Admission</a>
+        </p>
+    </div>
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="nav-logo">
+                <img src="./logo.png" alt="Tower House Academy Logo">
+                <span class="logo-text">
+                    <strong>THE TOWER HOUSE</strong>
+                    <small>ACADEMY & SCHOOL</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                    type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="results.html">Our Toppers</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="admission.html" class="nav-btn">
+                        Apply Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME PAGE ONLY -->
+        <section class="hero" id="home">
+            <div class="hero-pattern"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-star"></i>
+                        BUILD YOUR FUTURE WITH EXCELLENCE
+                    </span>
+
+                    <h1>
+                        THE TOWER
+                        <span>HOUSE ACADEMY</span>
+                        & SCHOOL
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover your potential with quality education,
+                        dedicated teachers and a learning environment
+                        designed to help students achieve their goals.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="admission.html" class="btn btn-gold">
+                            Apply for Admission
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="programs.html" class="btn btn-outline">
+                            <i class="fa-solid fa-book-open"></i>
+                            Explore Programs
+                        </a>
+                    </div>
+
+                    <p class="hero-note">
+                        <i class="fa-solid fa-circle-check"></i>
+                        O Level, A Level & Academic Guidance
+                    </p>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-logo-card">
+                        <img src="./logo.png"
+                             alt="The Tower House Academy emblem">
+
+                        <span class="visual-label">
+                            KNOWLEDGE • DISCIPLINE • EXCELLENCE
+                        </span>
+                    </div>
+
+                    <div class="floating-badge">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>
+                            <strong>Shape Your Future</strong>
+                            <small>Learn today, lead tomorrow</small>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+
+            <a href="index.html" class="footer-brand">
+                <img src="./logo.png" alt="Tower House Academy Logo">
+                <span>
+                    <strong>THE TOWER HOUSE</strong>
+                    <small>ACADEMY & SCHOOL</small>
+                </span>
+            </a>
+
+            <p>
+                Building knowledge, encouraging learning
+                and supporting brighter futures.
+            </p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="programs.html">Programs</a>
+                <a href="results.html">Results</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="admission.html">Admissions</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span>
+                The Tower House Academy & School.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <a href="#home"
+       class="back-to-top"
+       id="back-to-top"
+       aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html>
